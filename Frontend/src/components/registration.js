@@ -20,7 +20,7 @@ const Reg = () => {
           <div className="col">
             <div className="card card-registration my-4">
               <div className="row g-0">
-                <div className="col-lg-6 d-none d-lg-block">
+                <div className="col-lg-6 d-none d-lg-block pt-5 pl-2">
                   <img
                     src={img}
                     alt="Sample photo"
@@ -120,6 +120,7 @@ const Reg = () => {
                         Course
                       </label>
                     </div>
+                    <div>
                     <div className="form-label">Select Languages:</div>
                     <div className="form-outline mb-4">
                       <div className="form-check">
@@ -220,6 +221,119 @@ const Reg = () => {
                           Marathi
                         </label>
                       </div>
+                      <div className="form-label">Eduction Qualification:</div>
+                    <div className="form-outline mb-4">
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value="English"
+                          id="englishCheckbox"
+                          onChange={handleLanguageChange}
+                        />
+                        <label
+                          className="form-check-label"
+                          htmlFor="englishCheckbox">
+                          Completed graduation
+                        </label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value="Hindi"
+                          id="hindiCheckbox"
+                          onChange={handleLanguageChange}
+                        />
+                        <label
+                          className="form-check-label"
+                          htmlFor="hindiCheckbox">
+                          Pursuing graduation
+                        </label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value="Kannada"
+                          id="kannadaCheckbox"
+                          onChange={handleLanguageChange}
+                        />
+                        <label
+                          className="form-check-label"
+                          htmlFor="kannadaCheckbox">
+                          Completed Diploma
+                        </label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value="Tamil"
+                          id="tamilCheckbox"
+                          onChange={handleLanguageChange}
+                        />
+                        <label
+                          className="form-check-label"
+                          htmlFor="tamilCheckbox">
+                          Pursuing Diploma
+                        </label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value="Malyalam"
+                          id="malayalamCheckbox"
+                          onChange={handleLanguageChange}
+                        />
+                        <label
+                          className="form-check-label"
+                          htmlFor="malayalamCheckbox">
+                        Completed Grade 12th (PUC)
+                        </label>
+                      </div>
+                      <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value="Telugu"
+                          id="teluguCheckbox"
+                          onChange={handleLanguageChange}
+                        />
+                        <label
+                          className="form-check-label"
+                          htmlFor="teluguCheckbox">
+                          Pursuing Grade 12th (PUC)
+                        </label>
+                      </div>
+                      <div className="form-outline mb-4 my-4">
+                      <input
+                        type="password"
+                        id="form3ExamplePassword"
+                        className="form-control form-control-lg"
+                      />
+                      <label
+                        className="form-label"
+                        htmlFor="form3ExamplePassword">
+                        Mention School/College
+                      </label>
+                    </div>
+                      {/* <div className="form-check">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          value="Marathi"
+                          id="marathiCheckbox"
+                          onChange={handleLanguageChange}
+                        />
+                        <label
+                          className="form-check-label"
+                          htmlFor="marathiCheckbox">
+                          Marathi
+                        </label>
+                      </div> */}
+                    </div>
                     </div>
                     <div className="form-outline mb-4">
                       <input
@@ -250,6 +364,7 @@ const Reg = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

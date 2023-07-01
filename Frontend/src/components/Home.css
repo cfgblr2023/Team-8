@@ -6,11 +6,17 @@
     padding-top: 30px;
 }
 #image{
-    background-image: url("../image/empowher.jpg");
-    background-size: contain;
-    height: 448px;
+    background-image: url("../image/newWomen.jpg");
+    background-size: cover;
+    height: 500px;
 }
 .canasu{
     color: black;
     font-size: 60px;
+}
+.popular{
+    display: flex;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }

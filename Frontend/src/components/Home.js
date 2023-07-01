@@ -12,15 +12,15 @@ const Home = () => {
 <div id="image" className="p-5 rounded-3 my-0">
   <div id="dtt" className="container-fluid py-5">
     <div className="geeks">
-      <h1 className="canasu">CANASU FOUNDATION</h1>
+      <h1 className="canasu pt-5">CANASU FOUNDATION</h1>
       {/* <p className="text-white-50 mb-4 lead">
         Hand-picked Instructor and expertly crafted courses, designed for the modern students and entrepreneur.
       </p> */}
-      <Link to="/login" className="btn btn-dark btn-lg">
+      <Link to="/login" className="btn btn-dark btn-lg mt-5">
         Are You a Student?
       </Link>
 
-      <Link to="/login" className="btn btn-lg mx-2" style={{ backgroundColor: "aliceblue" }}>
+      <Link to="/login" className="btn btn-lg mx-2 mt-5" style={{ backgroundColor: "aliceblue" }}>
         Are You an Instructor?
       </Link>
     </div>
@@ -29,42 +29,42 @@ const Home = () => {
 </div>
 
 <div className="head">
-    <div className='container justify-content-center my-5'>
+    <div className='container align-items-center my-5 px-9'>
     <h2>Our Vision is to create a world in which all women determine <br />the course of their lifes & reach their full potential</h2>
     </div>
   
   <div className="popular">
-    <div className="card" style={{ width: "18rem" }}>
+    <div className="card mx-4" style={{ width: "18rem" }}>
       <img src={Shiksha}className="card-img-top" alt="..." />
       <div className="card-body">
-        <p className="card-text">
+        {/* <p className="card-text">
           Some quick example text to build on the card title and make up the bulk of the card's content.
-        </p>
+        </p> */}
       </div>
     </div>
-    <div className="card" style={{ width: "18rem" }}>
+    <div className="card mx-4" style={{ width: "18rem" }}>
       <img src={udaan} className="card-img-top" alt="..." />
       <div className="card-body">
-        <p className="card-text">
+        {/* <p className="card-text">
           Some quick example text to build on the card title and make up the bulk of the card's content.
-        </p>
+        </p> */}
       </div>
     </div>
-    <div className="card" style={{ width: "18rem" }}>
+    <div className="card mx-4" style={{ width: "18rem" }}>
       <img src={Vridhi} className="card-img-top" alt="..." />
       <div className="card-body">
-        <p className="card-text">
+        {/* <p className="card-text">
           Some quick example text to build on the card title and make up the bulk of the card's content.
-        </p>
+        </p> */}
       </div>
       
     </div>
-    <div className="card" style={{ width: "18rem" }}>
+    <div className="card mx-4" style={{ width: "18rem" }}>
       <img src={empowher} className="card-img-top" alt="..." />
       <div className="card-body">
-        <p className="card-text">
+        {/* <p className="card-text">
           Some quick example text to build on the card title and make up the bulk of the card's content.
-        </p>
+        </p> */}
       </div>
       
     </div>

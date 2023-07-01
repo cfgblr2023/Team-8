@@ -3,8 +3,9 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Navbar from "./components/Navbar";
-import SignUp from "./components/SignUp";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Reg from "../src/components/registration";
+import Course from "./components/Student/Course";
 
 function App() {
   return (
@@ -20,7 +21,10 @@ function App() {
             <Login />
           </Route>
           <Route exact path="/signup">
-            <SignUp />
+           <Reg/>
+          </Route>
+          <Route exact path="/course">
+           <Course/>
           </Route>
         </Switch>
         <Footer />
