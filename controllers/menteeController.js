@@ -1,6 +1,6 @@
-const catchAsync = require("./../utils/catchAsync");
-const AppError = require("./../utils/appError");
-const Mentee = require("./../models/menteeModel");
+const catchAsync = require("../utils/catchAsync");
+const AppError = require("../utils/appError");
+const Mentee = require("../models/menteeModel");
 
 exports.getAllMentee = catchAsync(async (req, res, next) => {
   const mentee = await Mentee.find(req.params.id);
