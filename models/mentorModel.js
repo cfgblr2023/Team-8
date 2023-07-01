@@ -15,7 +15,7 @@ const mentorSchema = new mongoose.Schema({
     validate: [validator.isEmail, "User mail is incorrect"],
   },
   phone: {
-    type: Number,
+    type: String,
     required: [true, "A User must have a phone number"],
     min: 10,
     max: 10,

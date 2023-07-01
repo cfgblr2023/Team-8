@@ -19,6 +19,10 @@ const menteeSchema = new mongoose.Schema({
     required: [true, "A User must have a phone number"],
     validate: [validator.isNumeric, "Phone number must contain only digits"],
   },
+  language: {
+    type: String,
+    required: true,
+  },
   dob: {
     type: Date,
     required: true,
