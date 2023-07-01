@@ -7,6 +7,7 @@ const mentorSchema = new mongoose.Schema({
     type: String,
     required: [true, "Mentor must have a name"],
     validate: [validator.isAlpha, "User name must only contain characters"],
+    match: /^[a-zA-Z\s]+$/,
   },
   email: {
     type: String,
@@ -41,16 +42,20 @@ const mentorSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  availability: {
-    date: {
-      type: Date,
-      required: true,
-    },
-    time: {
-      type: String,
-      required: true,
-    },
-  },
+  // availability: {
+  //   date: {
+  //     type: Date,
+  //     required: true,
+  //   },
+  //   time: {
+  //     type: String,
+  //     required: true,
+  //   },
+  // },
+  available_status:{
+    type: Boolean,
+    required: true,
+  }
 });
 
 const Mentor = mongoose.model("Mentor", mentorSchema);
