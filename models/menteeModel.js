@@ -47,6 +47,16 @@ const menteeSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  availability: {
+    date: {
+      type: Date,
+      required: true,
+    },
+    time: {
+      type: String,
+      required: true,
+    },
+  },
 });
 
 const Mentee = mongoose.model("Mentee", menteeSchema);

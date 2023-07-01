@@ -41,6 +41,16 @@ const mentorSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  availability: {
+    date: {
+      type: Date,
+      required: true,
+    },
+    time: {
+      type: String,
+      required: true,
+    },
+  },
 });
 
 const Mentor = mongoose.model("Mentor", mentorSchema);
