@@ -1,4 +1,10 @@
 import React from "react";
+import prof from '../../image/professional-development-3.jpg'
+import soc from '../../image/750x450_395256-social-media.jpg'
+import fin from '../../image/download.jpeg'
+import soft from '../../image/cio-softskills_mobile.png'
+
+
 
 const Course = () => {
   let Course = {
@@ -11,7 +17,7 @@ const Course = () => {
       </div>
       <div>
         <div class="card my-4" style={{ width: "8rem;" }}>
-          <img src="https://stock.adobe.com/search?k=%22professional+development%22" class="card-img-top" alt="..." />
+          <img src={prof} class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Professional Development</h5>
 
@@ -21,7 +27,7 @@ const Course = () => {
           </div>
         </div>
         <div class="card my-4" style={{ width: "8rem;" }}>
-          <img src="https://www.searchenginejournal.com/why-social-media-is-important/285809/" class="card-img-top" alt="..." />
+          <img src={soc} class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Social Media</h5>
 
@@ -31,7 +37,7 @@ const Course = () => {
           </div>
         </div>
         <div class="card my-4" style={{ width: "8rem;" }}>
-          <img src="https://www.freepik.com/vectors/finance" class="card-img-top" alt="..." />
+          <img src={ fin}class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Finance</h5>
 
@@ -41,7 +47,7 @@ const Course = () => {
           </div>
         </div>
         <div class="card my-4" style={{ width: "8rem;" }}>
-          <img src="" class="card-img-top" alt="..." />
+          <img src={soft} class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Soft Skills</h5>
 

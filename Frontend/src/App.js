@@ -6,7 +6,9 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Reg from "../src/components/registration";
 import Course from "./components/Student/Course";
-
+import AdminPage from "./components/adminpg";
+import RegMentor from "./components/regmentor";
+import Admin from "./components/Admin";
 function App() {
   return (
     <div>
@@ -25,6 +27,15 @@ function App() {
           </Route>
           <Route exact path="/course">
            <Course/>
+          </Route>
+          <Route exact path="/regmen">
+           <RegMentor/>
+          </Route>
+          <Route exact path="/adminlogin">
+           <AdminPage/>
+          </Route>
+          <Route exact path="/admin">
+           <Admin/>
           </Route>
         </Switch>
         <Footer />
