@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SAARTHI</string>
+    <string name="navigation_open">Open Navigation drawer</string>
+    <string name="navigation_close">Close Navigation drawer</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="regbtn">Register</string>
+    <string name="existinguser">Existing user?</string>
+    <string-array name="court_levels">
+        <item>Wealth Management</item>
+        <item>Software Engineer</item>
+        <item>Self Employed- Business</item>
+        <item>Lawyer</item>
+    </string-array>
+    <string-array name="crimes">
+        <item>0. Wealth Management</item>
+        <item>1. Researcher</item>
+        <item>2. Service</item>
+        <item>3. Senior analyst</item>
+        <item>4. IT professional</item>
+        <item>5. Financial Analyst</item>
+        <item>6. Software Engineer</item>
+        <item>7. Self Employed- Business </item>
+        <item>8. btech student</item>
+        <item>9. Freelance copywriter</item>
+        <item>10. Lawyer</item>
+    </string-array>
+
+</resources>

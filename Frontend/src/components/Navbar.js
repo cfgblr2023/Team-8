@@ -14,12 +14,12 @@ const Navbar = () => {
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <Link class="nav-link active" aria-current="page" to="/course">
-                Home
+                Courses
               </Link>
             </li>
             <li class="nav-item">
               <Link class="nav-link" to="/login">
-                Link
+                Blog
               </Link>
             </li>
             <li class="nav-item dropdown">
@@ -30,17 +30,17 @@ const Navbar = () => {
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Dropdown
+                Programs
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
                   <Link class="dropdown-item" to="/signup">
-                    Action
+                    Shiksha
                   </Link>
                 </li>
                 <li>
                   <Link class="dropdown-item" to="/">
-                    Another action
+                    Vridhi
                   </Link>
                 </li>
                 <li>
@@ -48,20 +48,17 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link class="dropdown-item" to="#">
-                    Something else here
+                   Udaan
+                  </Link>
+                </li>
+                <li>
+                  <Link class="dropdown-item" to="#">
+                   Empowher
                   </Link>
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                to="#"
-                tabindex="-1"
-                aria-disabled="true">
-                Disabled
-              </a>
-            </li>
+            
           </ul>
           
         </div>

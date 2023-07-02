@@ -1,37 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from "react-router-dom";
-// import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
+ import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Login = () => {
-//     const [credentials, setcredentials] = useState({email: "", password:""});
-//   let history = useHistory();
+    const [credentials, setcredentials] = useState({email: "", password:""});
+  let history = useHistory();
  
-//   const Submit=async (e)=>{
-//     // alert('Login Successful')  
-//      e.preventDefault();
-//      //api call to login
-//       const response = await fetch("http://localhost:5000/api/auth/login", {
-//           method: 'POST', // *GET, POST, PUT, DELETE, etc. 
-//           headers: {
-//             "Content-Type": "application/json"
-//              },
-//              body: JSON.stringify({email:credentials.email, password: credentials.password}),
-//         });
-//         // parses JSON response into native JavaScript objects
-//       const json = await response.json();
-//        console.log(json)
-//        if(json.success) {
-//         //redirect to your notes page and save the auth token
-//         localStorage.setItem('token',json.token)
-//         history.push('/home')
-//        }else{
-//         //ivalid credentials
+  const Submit=async (e)=>{
+    // alert('Login Successful')  
+     e.preventDefault();
+     //api call to login
+      const response = await fetch("http://localhost:5000/api/mentees/login", {
+          method: 'POST', // *GET, POST, PUT, DELETE, etc. 
+          headers: {
+            "Content-Type": "application/json"
+             },
+             body: JSON.stringify({email:credentials.email, password: credentials.password}),
+        });
+        // parses JSON response into native JavaScript objects
+      const json = await response.json();
+       console.log(json)
+       if(response.status >= 200 && response.status < 300)  {
+        //redirect to your notes page and save the auth token
+        localStorage.setItem('token',json.token)
+        history.push('/courses')
+       }else{
+        alert("invalid credentials")
 
-//        }
-//   }
-//   const change = (e)=>{
-//        setcredentials({...credentials, [e.target.name]: e.target.value})
-//   }
+       }
+  }
+  const change = (e)=>{
+       setcredentials({...credentials, [e.target.name]: e.target.value})
+  }
 
   return (
     <section className="vh-100 my-5 pt-5">

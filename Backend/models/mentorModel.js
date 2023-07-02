@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 // const slugify = require("slugify");
+const bcrypt = require("bcryptjs");
 const validator = require("validator");
 
 const mentorSchema = new mongoose.Schema({
@@ -7,13 +8,18 @@ const mentorSchema = new mongoose.Schema({
     type: String,
     required: [true, "Mentor must have a name"],
     validate: [validator.isAlpha, "User name must only contain characters"],
-    match: /^[a-zA-Z\s]+$/,
   },
   email: {
     type: String,
     required: [true, "A User must have a email address"],
     unique: true,
     validate: [validator.isEmail, "User mail is incorrect"],
+  },
+  password: {
+    type: String,
+    required: [true, "Please provide a password"],
+    minlength: 8,
+    select: false,
   },
   phone: {
     type: String,
@@ -30,7 +36,7 @@ const mentorSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  designation: {
+  skills: {
     type: String,
     required: true,
   },
@@ -42,21 +48,28 @@ const mentorSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  // availability: {
-  //   date: {
-  //     type: Date,
-  //     required: true,
-  //   },
-  //   time: {
-  //     type: String,
-  //     required: true,
-  //   },
-  // },
-  available_status:{
-    type: Boolean,
+  availability: {
+    type: Date,
     required: true,
-  }
+  },
+  available_status: {
+    type: Boolean,
+  },
 });
+
+mentorSchema.pre("save", async function (next) {
+  // Hash the password with cost of 12
+  this.password = await bcrypt.hash(this.password, 12);
+  // Delete passwordConfirm field
+  next();
+});
+
+mentorSchema.methods.correctPassword = async function (
+  candidatePassword,
+  userPassword
+) {
+  return await bcrypt.compare(candidatePassword, userPassword);
+};
 
 const Mentor = mongoose.model("Mentor", mentorSchema);
 module.exports = Mentor;
