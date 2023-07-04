@@ -60,6 +60,5 @@ Start the server
 ![WebApp Screenshot](https://github.com/cfgblr2023/Team-8/blob/master/Images/Canasu%20Foundation%20Team%208.png?raw=true)
 ![WebApp Screenshot](https://github.com/cfgblr2023/Team-8/blob/master/Images/Canasu%20Foundation%20Team%208%20(1).png?raw=true)
 ![WebApp Screenshot](https://github.com/cfgblr2023/Team-8/blob/master/Images/Canasu%20Foundation%20Team%208%20(2).png?raw=true)
-![WebApp Screenshot](https://github.com/cfgblr2023/Team-8/blob/master/Images/Canasu%20Foundation%20Team%208%20(4).png?raw=true)
 ![WebApp Screenshot](https://github.com/cfgblr2023/Team-8/blob/master/Images/Canasu%20Foundation%20Team%208%20(3).png?raw=true)
 
