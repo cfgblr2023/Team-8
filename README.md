@@ -57,5 +57,5 @@ Start the server
 
 ## Screenshots
 
-![WebApp Screenshot](https://raw.githubusercontent.com/cfgblr2023/Team-8/master/Images/Canasu%20Foundation%20Team%208.png token=GHSAT0AAAAAACEO2V4ZZFAVGZCPL7QABDEEZFDSVMA)
+![WebApp Screenshot](https://raw.githubusercontent.com/cfgblr2023/Team-8/master/Images/Canasu%20Foundation%20Team%208.png)
 
