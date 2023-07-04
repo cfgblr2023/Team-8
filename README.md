@@ -57,5 +57,5 @@ Start the server
 
 ## Screenshots
 
-![WebApp Screenshot](https://raw.githubusercontent.com/cfgblr2023/Team-8/master/Images/Canasu%20Foundation%20Team%208.png)
+![WebApp Screenshot](https://github.com/cfgblr2023/Team-8/blob/master/Images/Canasu%20Foundation%20Team%208.png?raw=true)
 
